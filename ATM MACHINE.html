@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practices</title>
+</head>
+
+<style>
+    .balance-show{
+        display:none;
+    }
+
+    .withdraw-show{
+        display:none;
+    }
+
+    .deposit-show{
+        display:none;
+    }
+
+
+    .exit-show{
+        display:none;
+    }
+    
+
+
+
+    
+</style>
+<body>
+    <div class="main">
+        <h1 class="header">ATM Machine</h1>
+        <h2>Welcome to ATM Machine</h2>
+        <h3>Choose your Transaction</h3>
+        <button class="balancebtn" onclick="balanceShow()">BALANCE</button>
+        <button class="withdrawbtn" onclick="withdrawShow()"> WITHDRAW</button>
+        <button class="depositbtn" onclick="depositShow()"> DEPOSIT</button>
+        <button class="exitbtn" onclick="exitShow()"> EXIT</button>
+
+        
+            <!-- <input type="number" class="trans" placeholder="Enter Your Transaction">
+            <button type="submit" onclick="checkTrans()">ENTER</button>
+         -->
+        
+        <hr>
+    </div>
+    
+
+    <div class="transaction"></div>
+    <!-- balance -->
+    <div class="balance-show">
+        <h2>BALANCE</h2>
+        <span class="currentBal">YOUR BALANCE: PHP </span>
+        <span class="totalBal"></span>
+        <!-- exit -->
+        <button onclick="exitShow()">EXIT</button>
+    </div>
+
+    <!-- withdraw -->
+    <div class="withdraw-show">
+        <h2>WITHDRAW</h2>
+        <span>PHP</span>
+        <input type="text" class="withdrawAmnt" placeholder="Enter Withdrawal Amount">
+        <!-- <button class="minus">ENTER</button> -->
+        <button onclick="wTotal()">CHECK BALANCE</button>
+        <button class="exitbtn" onclick="exitShow()"> EXIT</button>
+    </div>
+
+    <!-- deposit -->
+    <div class="deposit-show">
+        <h2>DEPOSIT</h2>
+        <span>PHP</span>
+        <input type="text" class="depositAmnt" placeholder="Enter Deposit Amount"/>
+        <button onclick="dTotal()">CHECK BALANCE</button>
+        <button class="exitbtn" onclick="exitShow()"> EXIT</button>
+    </div>
+
+    <!-- exit -->
+    <div class="exit-show">
+        <h1>THANK YOU FOR USING OUR ATM MACHINE SYSTEM</h1>
+        <button onclick="checkBal()">CHECK BALANCE</button>
+        
+        <button class="back" onclick="back()">BACK</button>
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="javascript_practice.js"></script>
+</html>   
